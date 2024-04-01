@@ -5,6 +5,17 @@ class EventsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.background,
+      appBar: AppBar(
+        title: Text(
+          'Events',
+          style: Theme.of(context).textTheme.titleLarge!.copyWith(
+              color: Theme.of(context).colorScheme.primary,
+              fontWeight: FontWeight.bold),
+        ),
+        actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.add))],
+      ),
+    );
   }
 }
