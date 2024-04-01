@@ -1,4 +1,4 @@
-import 'package:ayojaka/main.dart';
+import 'package:ayojaka/screens/events_screen.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -17,10 +17,10 @@ class _SplashScreenState extends State<SplashScreen> {
 
   _navigateToHome() async {
     await Future.delayed(const Duration(milliseconds: 4000), () {});
-    Navigator.pushReplacement(context,
-        MaterialPageRoute(builder: (BuildContext context) => const Scaffold(
-          body: Center(child: Text('Splash Screen Created', style: TextStyle(color: Colors.red),)),
-        )));
+    Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+            builder: (BuildContext context) => const EventsScreen()));
   }
 
   @override
