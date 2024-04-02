@@ -1,3 +1,4 @@
+import 'package:ayojaka/widgets/event_list.dart';
 import 'package:flutter/material.dart';
 
 class EventsScreen extends StatelessWidget {
@@ -16,6 +17,7 @@ class EventsScreen extends StatelessWidget {
         ),
         actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.add))],
       ),
+      body: const EventList(),
     );
   }
 }
